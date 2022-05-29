@@ -1,0 +1,140 @@
+@if $vista==desktop{
+
+.box16{
+    grid-area: box16;
+    
+    /*Formulario*/
+
+.formu{
+    display:flex;
+    flex-direction: column;
+
+    form{
+        padding: 15px;
+        background-color: $colorbackground;
+        display: flex;
+        flex-direction: column;
+
+        fieldset{
+            legend{
+                padding: 50px;
+                font-family: $fontbig;
+                font-weight: bold;
+                font-size: 2rem;
+            }
+
+            .boton1{
+                margin-left: 50px;
+                margin-bottom: 50px;
+                font-family: $fontbig;
+                font-weight: bold;
+                padding: 10px; 
+            }
+
+            .boton2{
+                margin-left: 10px;
+                margin-bottom: 50px;
+                font-family: $fontbig;
+                font-weight: bold;
+                padding: 10px; 
+            }
+        }
+
+        div{
+            font-family: $fontbig;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+
+            input{
+                background-color:$color1;    
+                width: 200px;
+                font-family: $fontbig;
+            }
+
+            textarea{
+                background-color: $color1;    
+                width: 500px;
+                margin-top: 2px;
+                padding: 5px;
+                font-family: $fontbig;
+            }
+        }
+    }
+}
+}}
+
+@else if $vista==mobile{
+
+    .box16{
+        grid-area: box16; 
+    }
+    
+    /*Formulario*/
+    
+    .box16 .formu{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .box16 .formu form{
+        padding: 15px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box16 .formu form fieldset legend{
+        padding: 15px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    
+    .box16 .formu form div{
+        font-family: 'Fira Sans', sans-serif;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box16 .formu form div label{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 0.7rem;
+    }
+    
+    .box16 .formu form div input{
+        background-color:whitesmoke;    
+        width: 100px;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 0.7rem;
+    }
+    
+    .box16 .formu form div textarea{
+        background-color: whitesmoke;    
+        width: 200px;
+        height: 200px;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 0.7rem;
+    }
+    
+    .box16 .formu fieldset .boton1{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 0.7rem;
+        
+    }
+    
+    .box16 .formu fieldset .boton2{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 0.7rem;
+        
+    }}
+    

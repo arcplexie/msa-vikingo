@@ -1,0 +1,1543 @@
+@charset "UTF-8";
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Variables*/
+/*Mixines*/
+/* Mixin normalizados*/
+/*Titulos h2 en paginas*/
+/*Titulos h2 en index*/
+/*Titulos h2 link a con hoover*/
+/*Parrafos*/
+/*Imagenes*/
+/*card Imagenes*/
+/*Titulo de cards*/
+/*Desktop style-----------------------------------------------------------------------------------------------*/
+/*Index grid*/
+.contenedor {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header header header" "box0 box0 box0" "services training shop" "team team magazine" "team team magazine" "footer footer footer";
+  gap: 10px; }
+
+/*Nosotros grid*/
+.contenedor1 {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header" "box06 box06 box06" "box05 box05 box05" "footer footer footer";
+  gap: 10px; }
+
+/*Servicios grid*/
+.contenedor2 {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header header header" "box07 box07 box07" "box08 box08 box08" "box09 box09 box09" "box10 box10 box10" "footer footer footer";
+  gap: 10px; }
+
+/*Entrenamiento grid*/
+.contenedor3 {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header" "box11 box11 box11" "box12 box12 box12" "footer footer footer";
+  gap: 10px; }
+
+/*Shop grid*/
+.contenedor4 {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header header header" "box13 box13 box13" "footer footer footer";
+  gap: 10px; }
+
+/*Equipo grid*/
+.contenedor5 {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header" "box14 box14 box14" "box15 box15 box15" "footer footer footer";
+  gap: 10px; }
+
+/*Contacto grid*/
+.contenedor6 {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header header header" "box16 box16 box16" "footer footer footer";
+  gap: 10px; }
+
+/* Header*/
+.header {
+  grid-area: header; }
+  .header .boxh {
+    justify-content: space-between;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px; }
+    .header .boxh .title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 5px;
+      padding-top: 20px; }
+      .header .boxh .title h1 {
+        color: #004aad;
+        font-family: "League Spartan", sans-serif;
+        font-size: 1.3rem;
+        justify-content: left;
+        display: flex;
+        margin-left: 0px;
+        margin-top: 10px;
+        font-weight: 500; }
+        .header .boxh .title h1 span {
+          color: #e6443d; }
+      .header .boxh .title img {
+        width: 3%;
+        height: auto; }
+  .header .container-fluid {
+    background-color: #050561;
+    border-radius: 5px; }
+    .header .container-fluid .nav-item .nav-link {
+      color: #c9cddd;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: bolder;
+      font-size: 0.95rem; }
+    .header .container-fluid .nav-item .dropdown-menu {
+      background-color: white; }
+      .header .container-fluid .nav-item .dropdown-menu .dropdown-item {
+        color: black;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 550;
+        font-size: 0.95rem; }
+  .header .rss {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 5;
+    width: 94%; }
+    .header .rss a {
+      display: contents; }
+      .header .rss a img {
+        width: 4%;
+        margin-top: 5px; }
+
+/*Footer*/
+.footer {
+  grid-area: footer; }
+  .footer .box04 {
+    background-color: white;
+    padding: 20px; }
+    .footer .box04 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      text-align: center; }
+      .footer .box04 h2 a {
+        text-decoration: none;
+        color: #c9cddd;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 1.2rem;
+        padding-left: 15px;
+        text-align: center; }
+      .footer .box04 h2 a:hover {
+        color: #aaa7a7;
+        list-style: none;
+        text-decoration: none; }
+    .footer .box04 div {
+      background-color: white;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 20px;
+      justify-content: center; }
+      .footer .box04 div h3 {
+        text-align: justify;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1rem; }
+      .footer .box04 div .data {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        .footer .box04 div .data h4 {
+          text-align: justify;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 600;
+          font-size: 1rem; }
+    .footer .box04 .pie {
+      display: flex;
+      background-color: #630404;
+      align-items: center;
+      justify-content: center;
+      height: 5px;
+      border-radius: 5px; }
+      .footer .box04 .pie p {
+        font-family: "Source Sans Pro", sans-serif;
+        color: #c9cddd;
+        font-size: 1rem; }
+
+/*Content Index*/
+/* Carousel */
+.box0 {
+  grid-area: box0; }
+
+.services {
+  grid-area: services; }
+  .services .box02 {
+    background-color: white;
+    padding: 5px;
+    justify-content: space-between; }
+    .services .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px; }
+      .services .box02 h2 a {
+        text-decoration: none;
+        color: #c9cddd;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 1.2rem;
+        padding-left: 15px; }
+      .services .box02 h2 a:hover {
+        color: #aaa7a7;
+        list-style: none;
+        text-decoration: none; }
+    .services .box02 p {
+      height: auto;
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .services .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .services .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+  .services .box02:hover {
+    transform: translateY(-10px);
+    transition-duration: 0.5s; }
+
+.training {
+  grid-area: training; }
+  .training .box02 {
+    background-color: white;
+    padding: 5px;
+    justify-content: space-between; }
+    .training .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px; }
+      .training .box02 h2 a {
+        text-decoration: none;
+        color: #c9cddd;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 1.2rem;
+        padding-left: 15px; }
+      .training .box02 h2 a:hover {
+        color: #aaa7a7;
+        list-style: none;
+        text-decoration: none; }
+    .training .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .training .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .training .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+  .training .box02:hover {
+    transform: translateY(-10px);
+    transition-duration: 0.5s; }
+
+.shop {
+  grid-area: shop; }
+  .shop .box02 {
+    background-color: white;
+    padding: 5px;
+    justify-content: space-between; }
+    .shop .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px; }
+      .shop .box02 h2 a {
+        text-decoration: none;
+        color: #c9cddd;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 1.2rem;
+        padding-left: 15px; }
+      .shop .box02 h2 a:hover {
+        color: #aaa7a7;
+        list-style: none;
+        text-decoration: none; }
+    .shop .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .shop .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .shop .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+  .shop .box02:hover {
+    transform: translateY(-10px);
+    transition-duration: 0.5s; }
+
+.team {
+  grid-area: team; }
+  .team .box03 {
+    background-color: whitesmoke;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 500px; }
+    .team .box03 h2 {
+      background-color: whitesmoke;
+      padding: 5px;
+      text-align: center;
+      padding-top: 20px; }
+      .team .box03 h2 a {
+        text-decoration: none;
+        color: black;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem; }
+      .team .box03 h2 a:hover {
+        color: #9e0909;
+        list-style: none;
+        text-decoration: none; }
+    .team .box03 p {
+      padding: 5x;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: center;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .team .box03 .imagen img {
+      border-radius: 100px;
+      width: 25%;
+      height: auto;
+      margin-top: 10px; }
+
+.magazine {
+  grid-area: magazine; }
+  .magazine .box03 {
+    background-color: whitesmoke;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px; }
+    .magazine .box03 h2 {
+      background-color: whitesmoke;
+      padding: 5px;
+      text-align: center;
+      padding-top: 20px; }
+      .magazine .box03 h2 a {
+        text-decoration: none;
+        color: black;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem; }
+      .magazine .box03 h2 a:hover {
+        color: #9e0909;
+        list-style: none;
+        text-decoration: none; }
+    .magazine .box03 p {
+      padding: 5x;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: center;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .magazine .box03 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .magazine .box03 .imagen img {
+        width: 60%;
+        height: auto;
+        border-radius: 5px; }
+
+/*Content Nosotros*/
+.box06 {
+  grid-area: box06; }
+  .box06 .box01 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    /*Mixines*/ }
+    .box06 .box01 h2 {
+      background-color: white;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #050561;
+      font-size: 1.2rem;
+      padding-left: 15px;
+      text-align: start; }
+    .box06 .box01 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .box06 .box01 ul {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-left: 40px; }
+    .box06 .box01 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .box06 .box01 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+
+/*Content Servicios*/
+/*Mixin propio en lugar de extend*/
+/*Transporte Aereo*/
+.box07 {
+  grid-area: box07; }
+  .box07 .box02 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    /*Mixines*/ }
+    .box07 .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #c9cddd;
+      font-size: 1.2rem;
+      padding-left: 15px; }
+    .box07 .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .box07 .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .box07 .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+
+/*Administracion de Aeronaves*/
+.box08 {
+  grid-area: box08; }
+  .box08 .box02 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    /*Mixines*/ }
+    .box08 .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #c9cddd;
+      font-size: 1.2rem;
+      padding-left: 15px; }
+    .box08 .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .box08 .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .box08 .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+
+/*Servicios en Tierra*/
+.box09 {
+  grid-area: box09; }
+  .box09 .box02 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    /*Mixines*/ }
+    .box09 .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #c9cddd;
+      font-size: 1.2rem;
+      padding-left: 15px; }
+    .box09 .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .box09 .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .box09 .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+
+/*Gestión de Mantenimiento*/
+.box10 {
+  grid-area: box10; }
+  .box10 .box02 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    /*Mixines*/ }
+    .box10 .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #c9cddd;
+      font-size: 1.2rem;
+      padding-left: 15px; }
+    .box10 .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .box10 .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .box10 .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+
+/*Content Entrenamiento*/
+/*Contenido*/
+.box11 {
+  grid-area: box11; }
+  .box11 .box02 h2 {
+    background-color: #050561;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Fira Sans", sans-serif;
+    text-decoration: none;
+    color: #c9cddd;
+    font-size: 1.2rem;
+    padding-left: 15px; }
+  .box11 .box02 p {
+    padding: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: justify;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem; }
+
+/*Cards*/
+.box12 {
+  grid-area: box12; }
+  .box12 .box02 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center; }
+    .box12 .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #c9cddd;
+      font-size: 1.2rem;
+      padding-left: 15px; }
+  .box12 .container .card .card-title {
+    font-family: "Fira Sans", sans-serif;
+    color: #050561;
+    font-size: 1.2rem; }
+  .box12 .container .card .card-body {
+    height: 300; }
+  .box12 .container .card .card-body .btn {
+    background-color: #2828b3;
+    border-color: white; }
+  .box12 .container .card .card-text {
+    padding: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: justify;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 130px; }
+  .box12 .container .card img {
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    margin-top: 10px; }
+  .box12 .container .layer {
+    position: absolute;
+    background: black;
+    top: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 5px; }
+  .box12 .container .card:hover .layer {
+    display: flex;
+    opacity: 0.9;
+    height: 100%;
+    transition: all 400ms;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 5; }
+    .box12 .container .card:hover .layer .btn {
+      width: 90%;
+      height: auto;
+      font-size: 1.5rem; }
+
+/*Content Shop*/
+.box13 {
+  grid-area: box13; }
+  .box13 .box02 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    /*Mixines*/ }
+    .box13 .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #c9cddd;
+      font-size: 1.2rem;
+      padding-left: 15px; }
+    .box13 .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .box13 .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .box13 .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+
+/*Content Equipo*/
+/*Mixin propio en lugar de extend*/
+/*Pilotos*/
+.box14 {
+  grid-area: box14; }
+  .box14 .box02 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    /*Mixines*/ }
+    .box14 .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #c9cddd;
+      font-size: 1.2rem;
+      padding-left: 15px; }
+    .box14 .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .box14 .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .box14 .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+
+/*Equipo de Tierra*/
+.box15 {
+  grid-area: box15; }
+  .box15 .box02 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    /*Mixines*/ }
+    .box15 .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #c9cddd;
+      font-size: 1.2rem;
+      padding-left: 15px; }
+    .box15 .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 1rem; }
+    .box15 .box02 .imagen {
+      padding: 1px;
+      text-align: center; }
+      .box15 .box02 .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; }
+
+/*Content Contacto*/
+.box16 {
+  grid-area: box16;
+  /*Formulario*/ }
+  .box16 .formu {
+    display: flex;
+    flex-direction: column; }
+    .box16 .formu form {
+      padding: 15px;
+      background-color: white;
+      display: flex;
+      flex-direction: column; }
+      .box16 .formu form fieldset legend {
+        padding: 50px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: bold;
+        font-size: 2rem; }
+      .box16 .formu form fieldset .boton1 {
+        margin-left: 50px;
+        margin-bottom: 50px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: bold;
+        padding: 10px; }
+      .box16 .formu form fieldset .boton2 {
+        margin-left: 10px;
+        margin-bottom: 50px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: bold;
+        padding: 10px; }
+      .box16 .formu form div {
+        font-family: "Fira Sans", sans-serif;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column; }
+        .box16 .formu form div input {
+          background-color: whitesmoke;
+          width: 200px;
+          font-family: "Fira Sans", sans-serif; }
+        .box16 .formu form div textarea {
+          background-color: whitesmoke;
+          width: 500px;
+          margin-top: 2px;
+          padding: 5px;
+          font-family: "Fira Sans", sans-serif; }
+
+/*Mobile Style----------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  /*Index grid*/
+  .contenedor {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header header" "box0 box0 box0" "services services services" "training training training" "shop shop shop" "magazine magazine magazine" "footer footer footer";
+    gap: 10px; }
+  /*nosotros grid*/
+  .contenedor1 {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header" "box06 box06 box06" "box06 box06 box06" "footer footer footer";
+    gap: 10px; }
+  /*servicios grid*/
+  .contenedor2 {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header header header" "box07 box07 box07" "box08 box08 box08" "box09 box09 box09" "box10 box10 box10" "footer footer footer";
+    gap: 10px; }
+  /*Entrenamiento Grid*/
+  .contenedor3 {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header" "box11 box11 box11" "box12 box12 box12" "footer footer footer";
+    gap: 10px; }
+  /*Shop Grid*/
+  .contenedor4 {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header" "box13 box13 box13" "footer footer footer";
+    gap: 10px; }
+  /*Equipo Grid*/
+  .contenedor5 {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header" "box14 box14 box14" "box15 box15 box15" "footer footer footer";
+    gap: 10px; }
+  /*Contacto grid*/
+  .contenedor6 {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header" "box16 box16 box16" "footer footer footer";
+    gap: 10px; }
+  /* Header*/
+  .header {
+    grid-area: header; }
+    .header .boxh {
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 10px; }
+      .header .boxh .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; }
+        .header .boxh .title h1 {
+          color: #004aad;
+          font-family: "League Spartan", sans-serif;
+          font-size: 1rem;
+          justify-content: left;
+          display: flex; }
+        .header .boxh .title img {
+          width: 6%;
+          height: auto; }
+    .header .container-fluid {
+      justify-content: end; }
+    .header .rss {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-end;
+      position: fixed;
+      opacity: 0.9;
+      z-index: 5;
+      width: 86%;
+      margin-top: 410px; }
+      .header .rss a {
+        display: contents; }
+        .header .rss a img {
+          width: 8%;
+          margin-left: 6px; }
+  /* Footer*/
+  .footer {
+    grid-area: footer; }
+    .footer .box04 {
+      background-color: white;
+      padding: 10px; }
+      .footer .box04 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: left; }
+        .footer .box04 h2 a {
+          text-decoration: none;
+          color: #c9cddd;
+          font-family: "Fira Sans", sans-serif;
+          font-size: 1rem;
+          padding-left: 15px;
+          text-align: left; }
+        .footer .box04 h2 a:hover {
+          color: #c9cddd;
+          list-style: none;
+          text-decoration: none; }
+      .footer .box04 div {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center; }
+        .footer .box04 div h3 {
+          text-align: justify;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 0.8rem; }
+        .footer .box04 div .data {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; }
+          .footer .box04 div .data h4 {
+            text-align: justify;
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 600;
+            font-size: 0.8rem; }
+      .footer .box04 .pie {
+        background-color: #630404;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        border-radius: 5px; }
+        .footer .box04 .pie p {
+          font-family: "Source Sans Pro", sans-serif;
+          color: #c9cddd;
+          font-size: 0.8rem; }
+  /*Content Index*/
+  .services {
+    grid-area: services; }
+    .services .box02 {
+      background-color: white;
+      padding: 5px;
+      justify-content: space-between; }
+      .services .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px; }
+        .services .box02 h2 a {
+          text-decoration: none;
+          color: #c9cddd;
+          font-family: "Fira Sans", sans-serif;
+          font-size: 1rem;
+          padding-left: 15px; }
+        .services .box02 h2 a:hover {
+          color: #aaa7a7;
+          list-style: none;
+          text-decoration: none; }
+      .services .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .services .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .services .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+    .services .box02:hover {
+      transform: translateY(-10px);
+      transition-duration: 0.5s; }
+  .training {
+    grid-area: training; }
+    .training .box02 {
+      background-color: white;
+      padding: 5px;
+      justify-content: space-between; }
+      .training .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px; }
+        .training .box02 h2 a {
+          text-decoration: none;
+          color: #c9cddd;
+          font-family: "Fira Sans", sans-serif;
+          font-size: 1rem;
+          padding-left: 15px; }
+        .training .box02 h2 a:hover {
+          color: #aaa7a7;
+          list-style: none;
+          text-decoration: none; }
+      .training .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .training .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .training .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+    .training .box02:hover {
+      transform: translateY(-10px);
+      transition-duration: 0.5s; }
+  .shop {
+    grid-area: shop; }
+    .shop .box02 {
+      background-color: white;
+      padding: 5px;
+      justify-content: space-between; }
+      .shop .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px; }
+        .shop .box02 h2 a {
+          text-decoration: none;
+          color: #c9cddd;
+          font-family: "Fira Sans", sans-serif;
+          font-size: 1rem;
+          padding-left: 15px; }
+        .shop .box02 h2 a:hover {
+          color: #aaa7a7;
+          list-style: none;
+          text-decoration: none; }
+      .shop .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .shop .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .shop .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+    .shop .box02:hover {
+      transform: translateY(-10px);
+      transition-duration: 0.5s; }
+  .team {
+    display: none; }
+  .magazine {
+    grid-area: magazine; }
+    .magazine .box03 {
+      background-color: white;
+      padding: 5px;
+      justify-content: space-between; }
+      .magazine .box03 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: left; }
+        .magazine .box03 h2 a {
+          text-decoration: none;
+          color: #c9cddd;
+          font-family: "Fira Sans", sans-serif;
+          font-size: 1rem;
+          padding-left: 15px; }
+        .magazine .box03 h2 a:hover {
+          color: #c9cddd;
+          list-style: none;
+          text-decoration: none; }
+      .magazine .box03 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .magazine .box03 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .magazine .box03 .imagen img {
+          width: 60%;
+          height: auto;
+          border-radius: 5px; }
+  /*Content Nosotros Mobile*/
+  .box06 {
+    grid-area: box06; }
+    .box06 .box01 {
+      background-color: white;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      /*Mixines*/ }
+      .box06 .box01 h2 {
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Fira Sans", sans-serif;
+        text-decoration: none;
+        color: #050561;
+        font-size: 1rem;
+        padding-left: 15px;
+        text-align: center; }
+      .box06 .box01 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .box06 .box01 ul {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-left: 20px; }
+      .box06 .box01 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .box06 .box01 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+  /*Content Servicios Mobile*/
+  /*Mixin propio en lugar de extend*/
+  /*Transporte Aereo*/
+  .box07 {
+    grid-area: box07; }
+    .box07 .box02 {
+      background-color: white;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      /*Mixines*/ }
+      .box07 .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Fira Sans", sans-serif;
+        text-decoration: none;
+        color: #c9cddd;
+        font-size: 1rem;
+        padding-left: 15px; }
+      .box07 .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .box07 .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .box07 .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+  /*Administracion de Aeronaves*/
+  .box08 {
+    grid-area: box08; }
+    .box08 .box02 {
+      background-color: white;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      /*Mixines*/ }
+      .box08 .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Fira Sans", sans-serif;
+        text-decoration: none;
+        color: #c9cddd;
+        font-size: 1rem;
+        padding-left: 15px; }
+      .box08 .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .box08 .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .box08 .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+  /*Servicios en Tierra*/
+  .box09 {
+    grid-area: box09; }
+    .box09 .box02 {
+      background-color: white;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      /*Mixines*/ }
+      .box09 .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Fira Sans", sans-serif;
+        text-decoration: none;
+        color: #c9cddd;
+        font-size: 1rem;
+        padding-left: 15px; }
+      .box09 .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .box09 .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .box09 .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+  /*Gestión de Mantenimiento*/
+  .box10 {
+    grid-area: box10; }
+    .box10 .box02 {
+      background-color: white;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      /*Mixines*/ }
+      .box10 .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Fira Sans", sans-serif;
+        text-decoration: none;
+        color: #c9cddd;
+        font-size: 1rem;
+        padding-left: 15px; }
+      .box10 .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .box10 .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .box10 .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+  /*Content Entrenamiento Mobile*/
+  /*Contenido*/
+  .box11 {
+    grid-area: box11; }
+    .box11 .box02 h2 {
+      background-color: #050561;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Fira Sans", sans-serif;
+      text-decoration: none;
+      color: #c9cddd;
+      font-size: 1rem;
+      padding-left: 15px; }
+    .box11 .box02 p {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 0.8rem; }
+  /*Cards*/
+  .box12 {
+    grid-area: box12; }
+    .box12 .box02 {
+      background-color: white;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center; }
+      .box12 .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Fira Sans", sans-serif;
+        text-decoration: none;
+        color: #c9cddd;
+        font-size: 1rem;
+        padding-left: 15px; }
+    .box12 .container .card .card-title {
+      font-family: "Fira Sans", sans-serif;
+      color: color2;
+      font-size: 1rem; }
+    .box12 .container .card .card-body {
+      height: 200; }
+    .box12 .container .card .card-body .btn {
+      background-color: #2828b3;
+      border-color: white; }
+    .box12 .container .card .card-text {
+      padding: 20px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: justify;
+      color: black;
+      font-weight: 600;
+      font-size: 0.8rem; }
+    .box12 .container .card img {
+      border-radius: 10px;
+      width: 80%;
+      height: auto;
+      margin-top: 10px; }
+    .box12 .container .layer {
+      position: absolute;
+      background: black;
+      top: 0;
+      height: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      border-radius: 5px; }
+    .box12 .container .card:hover .layer {
+      display: flex;
+      opacity: 0.9;
+      height: 100%;
+      transition: all 400ms;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 5; }
+      .box12 .container .card:hover .layer .btn {
+        width: 90%;
+        height: auto;
+        font-size: 1.5rem; }
+  /*Content Shop Mobile*/
+  .box13 {
+    grid-area: box13; }
+    .box13 .box02 {
+      background-color: white;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      /*Mixines*/ }
+      .box13 .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Fira Sans", sans-serif;
+        text-decoration: none;
+        color: #c9cddd;
+        font-size: 1rem;
+        padding-left: 15px; }
+      .box13 .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .box13 .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .box13 .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+  /*Content Equipo Mobile*/
+  /*Mixin propio en lugar de extend*/
+  /*Pilotos*/
+  .box14 {
+    grid-area: box14; }
+    .box14 .box02 {
+      background-color: white;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      /*Mixines*/ }
+      .box14 .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Fira Sans", sans-serif;
+        text-decoration: none;
+        color: #c9cddd;
+        font-size: 1rem;
+        padding-left: 15px; }
+      .box14 .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .box14 .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .box14 .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+  /*Equipo de Tierra*/
+  .box15 {
+    grid-area: box15; }
+    .box15 .box02 {
+      background-color: white;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      /*Mixines*/ }
+      .box15 .box02 h2 {
+        background-color: #050561;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Fira Sans", sans-serif;
+        text-decoration: none;
+        color: #c9cddd;
+        font-size: 1rem;
+        padding-left: 15px; }
+      .box15 .box02 p {
+        padding: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem; }
+      .box15 .box02 .imagen {
+        padding: 1px;
+        text-align: center; }
+        .box15 .box02 .imagen img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px; }
+  /*Content Contacto Mobile*/
+  .box16 {
+    grid-area: box16; }
+  /*Formulario*/
+  .box16 .formu {
+    display: flex;
+    flex-direction: column; }
+  .box16 .formu form {
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column; }
+  .box16 .formu form fieldset legend {
+    padding: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem; }
+  .box16 .formu form div {
+    font-family: 'Fira Sans', sans-serif;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column; }
+  .box16 .formu form div label {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.7rem; }
+  .box16 .formu form div input {
+    background-color: whitesmoke;
+    width: 100px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.7rem; }
+  .box16 .formu form div textarea {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.7rem; }
+  .box16 .formu fieldset .boton1 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 0.7rem; }
+  .box16 .formu fieldset .boton2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 0.7rem; } }

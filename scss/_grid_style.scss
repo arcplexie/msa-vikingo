@@ -1,0 +1,227 @@
+@if $vista==desktop{
+
+/*Index grid*/
+.contenedor{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "header header header"
+    "box0 box0 box0"
+    "services training shop"
+    "team team magazine"
+    "team team magazine"
+    "footer footer footer";
+    gap: 10px;
+}
+
+/*Nosotros grid*/
+.contenedor1{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header header header"
+    "box06 box06 box06"
+    "box05 box05 box05"
+    "footer footer footer";
+    gap: 10px;
+}
+
+/*Servicios grid*/
+.contenedor2{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "header header header"
+    "box07 box07 box07"
+    "box08 box08 box08"
+    "box09 box09 box09"
+    "box10 box10 box10"
+    "footer footer footer";
+    gap: 10px;
+}
+
+/*Entrenamiento grid*/
+.contenedor3{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header header header"
+    "box11 box11 box11"
+    "box12 box12 box12"
+    "footer footer footer";
+    gap: 10px;
+}
+
+/*Shop grid*/
+.contenedor4{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header header header"
+    "box13 box13 box13"
+    "footer footer footer";
+    gap: 10px;
+}
+
+/*Equipo grid*/
+.contenedor5{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header header header"
+    "box14 box14 box14"
+    "box15 box15 box15"
+    "footer footer footer";
+    gap: 10px;
+}
+
+/*Contacto grid*/
+.contenedor6{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header header header"
+    "box16 box16 box16"
+    "footer footer footer";
+    gap: 10px;
+}}
+
+@else if $vista==mobile{
+
+    /*Index grid*/
+
+ .contenedor{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "header header header"
+    "box0 box0 box0"
+    "services services services"
+    "training training training"
+    "shop shop shop"
+    "magazine magazine magazine"
+    "footer footer footer";
+    gap: 10px;
+}
+
+/*nosotros grid*/
+
+.contenedor1{
+width: 90%;
+margin: 20px auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(4, auto);
+grid-template-areas: 
+"header header header"
+"box06 box06 box06"
+"box06 box06 box06"
+"footer footer footer";
+gap: 10px;
+}
+
+/*servicios grid*/
+
+.contenedor2{
+width: 90%;
+margin: 20px auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(6, auto);
+grid-template-areas: 
+"header header header"
+"box07 box07 box07"
+"box08 box08 box08"
+"box09 box09 box09"
+"box10 box10 box10"
+"footer footer footer";
+gap: 10px;
+}
+
+/*Entrenamiento Grid*/
+
+.contenedor3{
+width: 90%;
+margin: 20px auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(4, auto);
+grid-template-areas: 
+"header header header"
+"box11 box11 box11"
+"box12 box12 box12"
+"footer footer footer";
+gap: 10px;
+}
+
+/*Shop Grid*/
+
+.contenedor4{
+width: 90%;
+margin: 20px auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(3, auto);
+grid-template-areas: 
+"header header header"
+"box13 box13 box13"
+"footer footer footer";
+gap: 10px;
+}
+
+/*Equipo Grid*/
+
+.contenedor5{
+width: 90%;
+margin: 20px auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(4, auto);
+grid-template-areas: 
+"header header header"
+"box14 box14 box14"
+"box15 box15 box15"
+"footer footer footer";
+gap: 10px;
+}
+
+/*Contacto grid*/
+
+.contenedor6{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header header header"
+    "box16 box16 box16"
+    "footer footer footer";
+    gap: 10px;
+}
+
+}

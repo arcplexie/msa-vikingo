@@ -1,0 +1,99 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variables*/
+@import "variables";
+
+/*Mixines*/
+@import "mixin";
+
+/*Desktop style-----------------------------------------------------------------------------------------------*/
+$vista:desktop; 
+
+@import "grid_style";
+
+/* Header*/
+@import "header";
+
+/*Footer*/
+@import "footer";
+
+/*Content Index*/
+    /* Carousel */
+.box0{
+    grid-area: box0;
+}
+@import "index_service";
+@import "index_training";
+@import "index_shop";
+@import "index_team";
+@import "index_magazine";
+
+/*Content Nosotros*/
+@import "page_nosotros";
+
+/*Content Servicios*/
+@import "page_servicios"; 
+
+/*Content Entrenamiento*/
+@import "page_entrenamiento";
+
+/*Content Shop*/
+@import "page_shop";
+
+/*Content Equipo*/
+@import "page_equipo";
+
+/*Content Contacto*/
+@import "page_contacto";
+
+
+/*Mobile Style----------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:768px){
+
+   $vista:mobile;  
+
+   @import "grid_style";
+
+   /* Header*/
+   @import "header";
+
+   /* Footer*/
+   @import "footer";
+    
+   /*Content Index*/
+
+   @import "index_service";
+   @import "index_training";
+   @import "index_shop";
+   @import "index_team";
+   @import "index_magazine";
+  
+   /*Content Nosotros Mobile*/
+   @import "page_nosotros";
+
+   /*Content Servicios Mobile*/
+   @import "page_servicios";
+
+   /*Content Entrenamiento Mobile*/
+   @import "page_entrenamiento";
+
+   /*Content Shop Mobile*/
+   @import "page_shop";
+
+   /*Content Equipo Mobile*/
+   @import "page_equipo";
+
+   /*Content Contacto Mobile*/
+   @import "page_contacto";
+
+}
+
+
+
+

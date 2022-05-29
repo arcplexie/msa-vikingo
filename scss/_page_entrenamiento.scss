@@ -1,0 +1,128 @@
+/*Contenido*/
+.box11{
+    grid-area: box11; 
+
+    .box02{
+        @if $vista==desktop{
+
+            h2{ 
+                @include h_2($color2,5px,5px,$fontbig,$color4,$sizetitledesk,15px);
+            }
+            p{
+                @include p_a(20px,$fontsmall,justify,$colorp,600,$fontpdesk);
+            }}
+        
+           @else if $vista==mobile{
+            
+            h2{ 
+                @include h_2($color2,5px,5px,$fontbig,$color4,$sizetitlemobile,15px);
+            }
+             p{
+                @include p_a(20px,$fontsmall,justify,$colorp,600,$fontpmobile);
+            }}
+    }
+}
+
+/*Cards*/
+.box12{
+    grid-area: box12; 
+
+    .box02{
+        background-color: $colorbackground;
+        display: flex;
+        padding: 10px;
+        flex-direction:column;
+        justify-items: center;
+        justify-content: center;
+
+        @if $vista==desktop{
+
+            h2{ 
+                @include h_2($color2,5px,5px,$fontbig,$color4,$sizetitledesk,15px);
+            }}
+        
+           @else if $vista==mobile{
+            
+            h2{ 
+                @include h_2($color2,5px,5px,$fontbig,$color4,$sizetitlemobile,15px);
+            }
+          }
+    }
+
+    .container{
+        .card{
+            .card-title{
+
+                @if $vista==desktop{
+
+                @include cardtitle($fontbig,$color2,$sizetitledesk);
+                } 
+
+                @else if $vista==mobile{
+                
+                @include cardtitle($fontbig,color2,$sizetitlemobile);
+                } 
+            }
+
+            .card-body{
+                @if $vista==desktop{
+                    height: 300,}
+            
+            
+               @else if $vista==mobile{
+                    height: 200;}}
+                    
+
+            .card-body .btn{
+                background-color: rgb(40, 40, 179) ;
+                border-color: $colorbackground;
+            }
+
+            .card-text{
+                @if $vista==desktop{
+
+                        @include p_a(20px,$fontsmall,justify,$colorp,600,$fontpdesk);
+                        height: 130px}
+                
+                
+                   @else if $vista==mobile{
+                        @include p_a(20px,$fontsmall,justify,$colorp,600,$fontpmobile);
+                    }}
+            
+
+            @include imagescard(80%);
+        }
+
+        .layer {
+            position: absolute;
+            background:black;
+            top: 0;
+            height: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            border-radius: 5px;
+          }
+          
+         
+          .card:hover{
+          .layer{
+            display:flex;
+            opacity: 0.9;
+            height: 100%;
+            transition: all 400ms;
+            align-items:center;
+            flex-wrap:wrap;
+            justify-content: center;
+            z-index: 5;
+            
+            .btn{
+                width: 90%;
+                height: auto;
+                font-size: 1.5rem;
+            }
+          }}
+        
+    }
+}

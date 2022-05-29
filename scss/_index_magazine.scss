@@ -1,0 +1,80 @@
+.magazine{
+    grid-area: magazine;
+
+    @if $vista==desktop{
+    
+    .box03{
+        background-color:$color1;    
+        padding: 50px;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;  
+
+        h2{
+            background-color: $color1;    
+            padding: 5px;
+            text-align: center;
+            padding-top: 20px;
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-family: $fontbig;
+                font-weight: bold;
+                font-size: $sizetitledesk;
+            }
+
+            a:hover{
+                color: rgb(158, 9, 9);
+                list-style: none;
+                text-decoration: none;
+            }
+         }
+
+         p{
+            @include p_a(5x,$fontsmall,center,$colorp,600,$fontpdesk);
+        }
+
+        .imagen{
+            @include images(60%);
+        }}}
+
+        @else if $vista==mobile{
+
+            .box03{
+                background-color:$colorbackground;
+                padding: 5px;
+                justify-content: space-between;
+
+            h2{
+                background-color:$color2; 
+                padding: 5px;
+                border-radius: 5px;
+                text-align: left;
+    
+                a{
+                    text-decoration: none;
+                    color:$color4;
+                    font-family:$fontbig;
+                    font-size:$sizetitlemobile;
+                    padding-left: 15px;
+                }
+    
+                a:hover{
+                    color:$color4;
+                    list-style: none;
+                    text-decoration: none;;;
+                }
+            }
+
+            p{
+                @include p_a(20px,$fontsmall,justify,$colorp,600,$fontpmobile);
+                }
+
+            .imagen{
+                @include images(60%);
+                }
+        }
+    }
+
+}

@@ -1,0 +1,87 @@
+/* Mixin normalizados*/
+
+/*Titulos h2 en paginas*/
+
+@mixin h_2($backgroundcolor,$padding,$radius,$fontfamily,$color,$fontsize,$paddingleft) {
+        background-color:$backgroundcolor;
+        padding: $padding;
+        border-radius: $radius;
+        font-family: $fontfamily;
+        text-decoration: none;
+        color: $color;
+        font-size: $fontsize;
+        padding-left: $paddingleft;
+}
+
+/*Titulos h2 en index*/
+
+@mixin h_2i($backgroundcolor,$padding,$radius) {
+        background-color:$backgroundcolor;
+        padding: $padding;
+        border-radius: $radius;
+}
+
+/*Titulos h2 link a con hoover*/
+
+@mixin a_i($size) {
+
+        h2{
+                background-color: $color2; 
+                padding: 5px;
+                border-radius: 5px; 
+
+        a{
+                text-decoration: none;
+                color: $color4;
+                font-family: $fontbig;
+                font-size: $size;
+                padding-left: 15px; 
+            }
+            a:hover{
+                color: $colorhover;
+                list-style: none;
+                text-decoration: none;
+            }
+        }      
+}
+
+/*Parrafos*/
+
+@mixin p_a($padding,$fontfamily,$textalign,$color,$fontweight,$fontsize) {
+        padding: $padding;
+        font-family: $fontfamily;
+        text-align: $textalign;
+        color: $color;
+        font-weight: $fontweight;
+        font-size: $fontsize;
+}
+
+/*Imagenes*/
+
+@mixin images($width) {
+        padding: 1px;
+        text-align: center;
+        img{
+            width: $width;
+            height: auto;
+            border-radius: 5px;
+        }
+}
+
+/*card Imagenes*/
+
+@mixin imagescard($width) {
+        img{
+                border-radius: 10px;
+                width: $width;
+                height: auto;
+                margin-top: 10px;
+            }
+        }
+        
+/*Titulo de cards*/
+@mixin cardtitle($fontfamily,$color,$fontsize) {
+        font-family: $fontfamily;
+        color: $color;
+        font-size: $fontsize;
+}

@@ -1,0 +1,36 @@
+.shop{
+    grid-area: shop; 
+
+    .box02{
+        background-color: white;
+        padding: 5px;
+        justify-content: space-between; 
+
+        @if $vista==desktop{
+        
+        @include a_i($sizetitledesk);
+
+        p{
+            @include p_a(20px,$fontsmall,justify,$colorp,600,$fontpdesk);
+            }
+        }
+
+        @else if $vista==mobile{
+        
+            @include a_i($sizetitlemobile);
+            
+            p{
+                @include p_a(20px,$fontsmall,justify,$colorp,600,$fontpmobile);
+            }
+        }
+
+            .imagen{
+                @include images(100%);
+            }
+
+    }
+    .box02:hover{
+        transform: translateY(-10px);
+        transition-duration: 0.5s;
+    }
+}
